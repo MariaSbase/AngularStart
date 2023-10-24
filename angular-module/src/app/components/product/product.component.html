@@ -1,0 +1,7 @@
+<div class="flex">
+  <h3>User {{ products.name }}</h3>
+  <button (click)="details = !details" class="border py-2 bg-yellow-400">Show Id</button>
+  <div *ngIf="details">
+    {{products.id}}
+  </div>
+</div>
